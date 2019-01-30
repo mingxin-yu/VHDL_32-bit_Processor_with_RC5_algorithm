@@ -1,0 +1,27 @@
+S[15][14] Select Mode
+
+00: input
+01: key gen
+10: encoding
+11: decoding
+
+S[12] input switch (input clock) / BTNR
+S[13] input reset
+
+(Led[3] downto [0]: input segment)
+(Led[4] input rdy)
+
+S[11][10] Display Mode
+
+00: inst
+01: DMEM
+10: PC
+11: Reg
+
+S[6] downto S[0]:
+7 bits for RF/DMEM address
+
+input mignt have problem with the input swtches
+
+1. S[12] change to btnr solved clock problem
+2. btnr cannot used with led [1][0]
